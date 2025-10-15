@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân - Nguyễn Minh Thái</title>
+
+    <!-- File CSS chính -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome (icon mạng xã hội) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Thư viện hiệu ứng AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <nav class="navbar" data-aos="fade-down">
+        <div class="logo">Nguyễn Minh Thái</div>
+        <ul class="nav-links">
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#career">Nghề nghiệp</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== BANNER ===== -->
+    <section id="home" class="banner">
+      <div class="banner-text" data-aos="fade-in" data-aos-delay="200">
+        <h1 data-aos="zoom-in" data-aos-delay="400">
+          Xin chào, tôi là <span>Nguyễn Minh Thái</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="600">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </p>
+
+        <div class="social-icons" data-aos="fade-up" data-aos-delay="800">
+          <a href="https://www.instagram.com/minhthai1707" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://www.tiktok.com/" target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a href="https://github.com/nmt-vn" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <button
+          onclick="scrollToSection('about')"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
+          Khám phá thêm
+        </button>
+      </div>
+
+      <!-- Mũi tên cuộn xuống -->
+      <div
+        class="scroll-down"
+        onclick="scrollDown()"
+        data-aos="fade-up"
+        data-aos-delay="1200"
+      >
+        <p>Xem thêm</p>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- ===== GIỚI THIỆU ===== -->
+    <section id="about" class="container about-section" data-aos="fade-up">
+      <h2 data-aos="fade-down" data-aos-delay="100">Thông tin cá nhân</h2>
+      <div class="about-grid">
+        <div class="about-img" data-aos="fade-right" data-aos-delay="200">
+          <div class="photo-stack">
+            <img
+              src="images/profile1.jpg"
+              alt="Ảnh cá nhân 1"
+              class="photo photo1"
+            />
+            <img
+              src="images/profile2.jpg"
+              alt="Ảnh cá nhân 2"
+              class="photo photo2"
+            />
+            <img
+              src="images/profile3.jpg"
+              alt="Ảnh cá nhân 3"
+              class="photo photo3"
+            />
+            <img
+              src="images/profile4.jpg"
+              alt="Ảnh cá nhân 4"
+              class="photo photo4"
+            />
+          </div>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+          <h3>Xin chào 👋, tôi là <span>Nguyễn Minh Thái</span></h3>
+          <p><strong>Ngày sinh:</strong> 17/07/2005</p>
+          <p><strong>Email:</strong> Nguyenminhthai177@gmail.com</p>
+          <p><strong>Địa chỉ:</strong> Tây Ninh</p>
+          <p>
+            Tôi là sinh viên Công nghệ thông tin tại Trường Đại học Giao thông
+            Vận tải TP.HCM, yêu thích lập trình web và phát triển phần mềm. Tôi
+            luôn mong muốn tạo ra các sản phẩm mang tính ứng dụng cao và thân
+            thiện với người dùng.
+          </p>
+          <button
+            class="contact-btn"
+            onclick="scrollToSection('contact')"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            Liên hệ với tôi
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NGHỀ NGHIỆP ===== -->
+    <section id="career" class="career-section" data-aos="fade-up">
+      <div class="career-container">
+        <div class="career-icon" data-aos="zoom-in">🎯</div>
+        <div class="career-content" data-aos="fade-left">
+          <h2 class="career-title">Mục tiêu nghề nghiệp</h2>
+          <p class="career-text">
+            Tôi hướng đến trở thành <strong>lập trình viên full-stack</strong>,
+            có khả năng phát triển các sản phẩm web hiện đại, hiệu quả và thân
+            thiện với người dùng.
+          </p>
+          <p class="career-text">
+            Tôi mong muốn không ngừng học hỏi, trau dồi kỹ năng và đóng góp vào
+            những dự án mang lại <em>giá trị thực tế</em> cho cộng đồng.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SỞ THÍCH ===== -->
+    <section id="hobbies" class="container hobbies-section" data-aos="fade-up">
+      <h2>Sở thích</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card" data-aos="flip-left" data-aos-delay="100">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Lập trình</h3>
+          <p>
+            Khám phá và sáng tạo những dự án cá nhân nhỏ giúp rèn luyện kỹ năng
+            lập trình.
+          </p>
+        </div>
+        <div class="hobby-card" data-aos="flip-left" data-aos-delay="200">
+          <i class="fas fa-camera-retro"></i>
+          <h3>Nhiếp ảnh</h3>
+          <p>Ghi lại khoảnh khắc và góc nhìn sáng tạo qua ống kính máy ảnh.</p>
+        </div>
+        <div class="hobby-card" data-aos="flip-left" data-aos-delay="300">
+          <i class="fas fa-music"></i>
+          <h3>Âm nhạc</h3>
+          <p>
+            Nghe và remix nhạc để thư giãn, đồng thời tạo cảm hứng cho công
+            việc.
+          </p>
+        </div>
+        <div class="hobby-card" data-aos="flip-left" data-aos-delay="400">
+          <i class="fas fa-gamepad"></i>
+          <h3>Chơi game</h3>
+          <p>
+            Thư giãn và kết nối bạn bè qua các trò chơi trực tuyến yêu thích.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KỸ NĂNG ===== -->
+    <section id="skills" class="container" data-aos="fade-up">
+      <h2>Kỹ năng của tôi</h2>
+
+      <div class="skills-tabs" data-aos="zoom-in">
+        <button class="tab-btn active" data-target="tech">
+          💻 Ngôn ngữ lập trình
+        </button>
+        <button class="tab-btn" data-target="tools">🛠️ Công cụ sử dụng</button>
+      </div>
+
+      <div class="skills-content active" id="tech" data-aos="fade-up">
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+            <span>Nâng cao</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+            <span>Nâng cao</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+            <span>Trung bình</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+            <span>Cơ bản</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+            <i class="fab fa-react"></i>
+            <p>React</p>
+            <span>Cơ bản</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+            <i class="fas fa-database"></i>
+            <p>SQL</p>
+            <span>Trung bình</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-content" id="tools" data-aos="fade-up">
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-code"></i>
+            <p>VS Code</p>
+            <span>Nâng cao</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+            <span>Trung bình</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-figma"></i>
+            <p>Figma</p>
+            <span>Cơ bản</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-server"></i>
+            <p>XAMPP</p>
+            <span>Cơ bản</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+            <i class="fab fa-android"></i>
+            <p>Android Studio</p>
+            <span>Cơ bản</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DỰ ÁN ===== -->
+    <section
+      id="projects"
+      class="container projects-section"
+      data-aos="fade-up"
+    >
+      <h2>Dự án cá nhân</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+          <div class="project-thumb">
+            <img
+              src="https://koi-care-system.vercel.app/assets/KoiFish-DOtcfhBr.png"
+              alt="Koi Care System at Home"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Koi Care System at Home</h3>
+            <p>
+              Website hỗ trợ người nuôi cá Koi theo dõi, chăm sóc và quản lý
+              chất lượng nước tại nhà.
+            </p>
+            <a href="https://koi-care-system.vercel.app/" target="_blank"
+              >🔗 Xem dự án</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+          <div class="project-thumb">
+            <img
+              src="https://raw.githubusercontent.com/TuanPham303/smart-TODO-List/development/docs/main.jpeg"
+              alt="Smart Todo App"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Smart Todo App</h3>
+            <p>
+              Ứng dụng quản lý công việc cá nhân với ReactJS, có chức năng thêm,
+              lọc và chế độ tối.
+            </p>
+            <a href="https://dribbble.com/tags/to-do-app" target="_blank"
+              >🔗 Xem dự án</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+          <div class="project-thumb">
+            <img
+              src="https://colorlib.com/wp/wp-content/uploads/sites/2/busicol-free-template-353x278.jpg"
+              alt="Portfolio Website"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>
+              Trang web giới thiệu bản thân, kỹ năng và dự án — được tối ưu cho
+              trải nghiệm người dùng.
+            </p>
+            <a href="#" target="_blank">🔗 Xem dự án</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIÊN HỆ ===== -->
+    <footer id="contact" data-aos="fade-up">
+      <h2>Liên hệ</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i
+          ><span
+            >Email:
+            <a href="mailto:Nguyenminhthai177@gmail.com"
+              >Nguyenminhthai177@gmail.com</a
+            ></span
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i
+          ><span
+            >Github:
+            <a href="https://github.com/nmt-vn" target="_blank"
+              >github.com/nmt-vn</a
+            ></span
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-facebook"></i
+          ><span
+            >Facebook:
+            <a href="https://www.facebook.com/NguyenMinhThai177" target="_blank"
+              >facebook.com/minhthai9</a
+            ></span
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-instagram"></i
+          ><span
+            >Instagram:
+            <a href="https://www.instagram.com/minhthai1707" target="_blank"
+              >instagram.com/minhthai9</a
+            ></span
+          >
+        </div>
+      </div>
+      <p class="copyright">© 2025 Nguyễn Minh Thái. Thiết kế bởi chính tôi.</p>
+    </footer>
+
+    <!-- ✅ AOS script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 120,
+      });
+    </script>
+
+    <!-- Script riêng -->
+    <script src="script.js"></script>
+  </body>
+</html>
